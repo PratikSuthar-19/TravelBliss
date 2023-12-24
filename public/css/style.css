@@ -1,0 +1,139 @@
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif  !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    /* background-color: white; */
+    background-color:#ebebeb !important;
+}
+.fa-compass{
+    color: #fe434d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+/* footer */
+
+footer{
+    background-color:#ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+   
+}
+
+.f-social{
+   
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    
+}
+.f-brand{
+  
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    
+}
+.f-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.f-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-links a:hover{
+    text-decoration: underline;
+}
+
+
+/* //cards */
+
+.card{
+border: none !important;
+margin-bottom: 2rem; 
+}
+.card-img-top{
+    border-radius: 1rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0;
+}
+.card-body p{
+    font-weight: 400;
+   
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* //new */
+.btn-add{
+    background-color: #fe424d !important;
+    border: none;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem !important;
+}
+
+/* //show */
+
+.show-img{
+    height: 30vh;
+}
+.btn-e{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #fe424d !important;
+    border: none;
+}
+.btn-d{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+/* //review */
+
+.review-card{
+    border:  1px solid rgb(205, 205, 205) !important;
+    border-radius: 10px !important;
+    padding: 10px;
+    
+}
+
+/* map */
+#map { 
+    height: 400px;
+    width: 80vh;
+    border-radius: 15px;
+ }

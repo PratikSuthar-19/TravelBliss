@@ -1,0 +1,108 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <br>
+
+    <div class="row">
+        <div class="col-8 offset-2">
+
+     
+    <h3>Edit Your Listing</h3>
+   
+    <form action="/listings/<%=listing._id%>?_method=PUT" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+
+   
+        <div class="mb-3">
+            <label for="text" class="form-label">Title</label>
+            <input type="text"  class="form-control" name="Listing[title]"  value="<%=listing.title%> " required>
+            <div class="invalid-feedback">
+                Enter a Vlaid Title !
+              </div>
+        </div>
+
+       
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="Listing[description]" type="text" class="form-control" value="<%=listing.description%>" required ><%=listing.description%></textarea>
+            <div class="invalid-feedback">
+                Enter a short Description !
+              </div>
+        </div>
+
+        <!-- <div class="mb-3">
+            <label for="image" class="form-label">Image</label>
+            <input  name="Listing[image]"  class="form-control" value="<%=listing.image.url%>" type="text" required>
+            <div class="invalid-feedback">
+                Enter a Vlaid image !
+              </div>
+        </div> -->
+
+        <!-- <div class="mb-3">
+            <p>Original Listing Image</p>
+            <img src="" alt="Original Listing Image">
+            </div> -->
+        <div class="mb-3">
+         <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-text">Original Listing Image</h5>
+            </div>
+          <img src="<%=OriginalImageUrl%>" class="card-img-top" alt="Original Listing Image">
+         </div>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload a Image</label>
+            <input  name="Listing[image]"  class="form-control"  type="file" >
+            <div class="invalid-feedback">
+                Enter a Vlaid image !
+              </div>
+        </div>
+
+
+        <div class="row">
+            <!-- .toLocaleString("en-IN") -->
+       
+        <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input  name="Listing[price]" class="form-control"  value="<%=listing.price%>" type="number" required>
+           
+            <div class="invalid-feedback">
+                Enter a Vlaid Price !
+              </div>
+        </div>
+
+        
+        <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input name="Listing[country]" class="form-control" value="<%=listing.country%>" type="text" required>
+            <div class="invalid-feedback">
+                Enter a Vlaid Country !
+              </div>
+        </div>
+      
+    </div>
+
+        <div class="mb-3">
+            <label for="loaction" class="form-label">Location</label>
+            <input name="Listing[location]" class="form-control" value="<%=listing.location%>" type="text" required>
+            <div class="invalid-feedback">
+                Enter a Vlaid Location !
+              </div>
+        </div>
+      
+
+        <div class="mb-3">
+            <button type="submit " class="btn-add btn btn-dark"> EDIT </button>
+        </div>
+
+        <br><br>
+  
+    </form>
+
+</div>
+</div>
+
+
+</body>
+
+<!-- <script src="js/script.js"></script> -->
