@@ -106,6 +106,12 @@ app.get("/" , (req , res)=>{
 
 
 //router
+app.get("/" , async (req , res)=>{
+    
+    const allListing =  await Listing.find({});
+    res.render("listings/index.ejs" , {allListing} );
+   
+})
 app.use("/listings" , listingsRouter);
 app.use("/listings/:id/reviews" , reviewsRouter);
 app.use("/" , userRouter);
